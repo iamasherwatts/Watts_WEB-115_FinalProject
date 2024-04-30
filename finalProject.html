@@ -1,120 +1,67 @@
 <!DOCTYPE html>
-<head>
-    <title>WEB-115 Final Project</title>
-    <script></script>
-    <style>
-        .Top_Heading_With_Logo {
-            display: flex;
-            align-items: center;
-            font-family: 'Trebuchet MS', sans-serif;
-            font-size: 25px;
-        }
-        .Top_Heading_With_Logo img {
-            vertical-align: middle;
-        }
-        .Carousel_Food_Plan_Form{
-            text-align: center;
-        }
-        .Side_Banner {
-            display: flex;
-            align-items: center;
-            font-family: 'Trebuchet MS', sans-serif;
-        }
-        .Side_Banner img {
-            vertical-align: middle;
-            margin-right: 40px;
-        }
-    </style>
-</head>
+<html>
+    <head>
+        <title>WEB-115 Final Project</title>
+        <style>
+            body {
+                background-color: #F8F0E0;
+            }
 
-<body>
-    <!-- Top Banner -->
-    <div class="Top_Heading_With_Logo">
-        <h1 style="background-color: #BCD0C7; width: 100%; color: #262920;"><img src="PPFLogoV2.png" width="150" height="150"><b>Perfectly Proportioned Fitness</b></h1>
-    </div>
+            .Top_Heading_With_Logo {
+                display: flex;
+                align-items: center;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-size: 25px;
+            }
+            
+            .Top_Heading_With_Logo img {
+                vertical-align: middle;
+            }
+            
+            .Side_Banner {
+                display: flex;
+                align-items: center;
+                font-family: 'Trebuchet MS', sans-serif;
+            }
+            
+            .Side_Banner img {
+                vertical-align: middle;
+                margin-right: 40px;
+            }
 
-    <div class="Side_Banner">
-        <img src="BannerSide.png" style="height: 200; width: 200;">
-        <div style="color: #262920; font-size: 40px;">
-            <h2>Build Your Own Meal Plan!</h2>
-            <p>Asher Watts</p>
-            <p>WEB-115-0004</p>
-        </div>
-    </div>
+            #carousel_form_container {
+                position: absolute;
+                width: 300px;
+                height: 400px;
+                transform: translate(280%, 0%);
+            }
+        </style>
+    </head>
 
-    <br>
-
-    <!-- Carousel Form Structure (WIP Might Scrap) -->
-    <form id="Carousel_Food_Plan_Form" class="Carousel_Food_Plan_Form" style="background-color: #FBFAF5;">
-        <br>
-        <br>
-        <div class="Carousel">
-
-            <div class="Carousel-Form">
-                <p>Monday:</p>
-                <input type="text" id="MonBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="MonSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="MonLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="MonSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="MonDinner" placeholder="Enter Dinner"><br>
-            </div>
-
-            <div class="Carousel-Form">
-                <p>Tuesday:</p>
-                <input type="text" id="TuesBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="TuesSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="TuesLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="TuesSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="TuesDinner" placeholder="Enter Dinner"><br>
-            </div>
-
-            <div class="Carousel-Form">
-                <p>Wednesday:</p>
-                <input type="text" id="WedBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="WedSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="WedLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="WedSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="WedDinner" placeholder="Enter Dinner"><br>
-            </div>
-
-            <div class="Carousel-Form">
-                <p>Thursday:</p>
-                <input type="text" id="ThursBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="ThursSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="ThursLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="ThursSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="ThursDinner" placeholder="Enter Dinner"><br>
-            </div>
-
-            <div class="Carousel-Form">
-                <p>Friday:</p>
-                <input type="text" id="FriBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="FriSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="FriLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="FriSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="FriDinner" placeholder="Enter Dinner"><br>
-            </div>
-
-            <div class="Carousel-Form">
-                <p>Saturday:</p>
-                <input type="text" id="SatBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="SatSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="SatLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="SatSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="SatDinner" placeholder="Enter Dinner"><br>
-            </div>
-
-            <div class="Carousel-Form">
-                <p>Sunday:</p>
-                <input type="text" id="SunBreakfast" placeholder="Enter Breakfast"><br>
-                <input type="text" id="SunSnack1" placeholder="Enter Snack"><br>
-                <input type="text" id="SunLunch" placeholder="Enter Lunch"><br>
-                <input type="text" id="SunSnack2" placeholder="Enter Snack"><br>
-                <input type="text" id="SunDinner" placeholder="Enter Dinner"><br>
-            </div>
-
+    <body>
+        <!-- Top Banner -->
+        <div class="Top_Heading_With_Logo">
+            <h1 style="background-color: #BCD0C7; width: 100%; color: #262920;"><img src="PPFLogoV2.png" width="150" height="150"><b>Perfectly Proportioned Fitness</b></h1>
         </div>
 
-    </form>
-</body>
+        <!-- Side Banner -->
+        <div class="Side_Banner">
+            <img src="BannerSide.png" style="height: 200; width: 200;">
+            <div style="color: #262920; font-size: 40px;">
+                <h2>Build Your Own Meal Plan!</h2>
+                <p>Asher Watts</p>
+                <p>WEB-115-0004</p>
+            </div>
+        </div>
+
+        <!-- Break For Formatting-->
+        <br>
+
+        <!-- Div To Contain Form-->
+        <div id="carousel_form_container"></div>
+
+        <!-- Script Implementation-->
+        <script defer src="projectJS.js"></script>
+
+    </body>
 </html>
